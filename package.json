@@ -13,13 +13,20 @@
     "gl-mat4": "^1.0.2"
   },
   "devDependencies": {
+    "browserify": "^8.1.1",
     "gl-matrix": "^2.1.0",
+    "mat4-css-parse": "^1.0.3",
+    "mat4-css-stringify": "^1.0.1",
+    "prefix-style": "^1.0.0",
+    "smokestack": "^3.2.0",
+    "tap-closer": "^1.0.0",
     "tap-spec": "^2.2.0",
     "tape": "^3.5.0",
     "test-fuzzy-array": "^1.0.1"
   },
   "scripts": {
-    "test": "node test.js | tap-spec"
+    "test": "node test.js | tap-spec",
+    "test-browser": "browserify test-browser.js | tap-closer | smokestack | tap-spec"
   },
   "keywords": [
     "rotation",
