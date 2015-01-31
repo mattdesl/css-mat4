@@ -1,0 +1,44 @@
+{
+  "name": "css-mat4",
+  "version": "1.0.0",
+  "description": "makes a mat4 from translation, rotation, scale, skew",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "gl-mat4": "^1.0.2"
+  },
+  "devDependencies": {
+    "gl-matrix": "^2.1.0",
+    "tap-spec": "^2.2.0",
+    "tape": "^3.5.0",
+    "test-fuzzy-array": "^1.0.1"
+  },
+  "scripts": {
+    "test": "node test.js | tap-spec"
+  },
+  "keywords": [
+    "rotation",
+    "translation",
+    "mat4",
+    "matrix",
+    "4x4",
+    "compose",
+    "recompose",
+    "scale",
+    "skew",
+    "perspective"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/css-mat4.git"
+  },
+  "homepage": "https://github.com/mattdesl/css-mat4",
+  "bugs": {
+    "url": "https://github.com/mattdesl/css-mat4/issues"
+  }
+}
